@@ -1,6 +1,6 @@
 // tạo mảng 1-100
 const poneglyph=[];
-for(let i = 1; i <= 10; i++){
+for(let i = 1; i <= 100; i++){
     poneglyph.push(i);
 };
 let laughTale = 0;
