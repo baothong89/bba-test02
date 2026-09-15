@@ -35,6 +35,7 @@ const leaderBoard = [
     {name:"Brook", bounty: 55123 },
 ];
 leaderBoard.sort((a,b) => b.bounty - a.bounty);
+
 const medals = ["🥇", "🥈", "🥉"];
 
 for(let i = 0; i < leaderBoard.length; i++){
@@ -48,6 +49,23 @@ for(let i = 0; i < leaderBoard.length; i++){
         console.log(`${i+1}. ${leaderBoard[i].name} - ${leaderBoard[i].bounty} berries`)
     }
 }
+
+//Cách 2 dùng forEach với array
+
+function newLeaderboard(){
+    leaderBoard.forEach( (leaderBoard,i) => {
+        if (i===0){
+        console.log(`🥇 ${i+1}. ${leaderBoard.name} - ${leaderBoard.bounty} berries`)
+    }else if(i===1){
+        console.log(`🥈 ${i+1}. ${leaderBoard.name} - ${leaderBoard.bounty} berries`)
+    }else if(i===2){
+        console.log(`🥉 ${i+1}. ${leaderBoard.name} - ${leaderBoard.bounty} berries`)
+    }else {
+        console.log(`${i+1}. ${leaderBoard.name} - ${leaderBoard.bounty} berries`)
+    }
+    });
+};
+newLeaderboard();
 
 
 

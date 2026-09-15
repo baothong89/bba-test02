@@ -70,6 +70,9 @@ Gọi: xinChao(BaoThong);
 
 ## Utils function - array
 ### Sử dụng hàm map 
+
+    *format: array.map((currentItem, index, array) => ...)*
+    
     const arr1=[1,2,3]\
     const arr2 = arr1.map(num => num x2) : tạo mảng arr2 với giá trị từ arr1 lần lượt chạy qua biến num rồi x2 để tạo giá trị cho mảng arr2 ( mảng mới cùng độ dài với mảng cũ)
     
